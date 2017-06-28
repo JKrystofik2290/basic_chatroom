@@ -1,5 +1,5 @@
 # basic_chatroom
-# fuctionality:
+# Fuctionality:
   - Single multi-user chatroom
   - Prompts users when entering chatroom for username
     - Will NOT remember returning users

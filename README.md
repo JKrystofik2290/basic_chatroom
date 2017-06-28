@@ -1,8 +1,9 @@
 # basic_chatroom
-fuctionality:
-  - single multi-user chatroom
-  - prompts users when entering chatroom for username
-    will NOT remember returning users
-    usernames CAN be duplicated
+# fuctionality:
+  - Single multi-user chatroom
+  - Prompts users when entering chatroom for username
+    - Will NOT remember returning users
+    - Usernames CAN be duplicated
   - Notifies all users when someone enters or leaves the chatroom
-  - displays username next to message of who sent it
+  - Displays username next to message of who sent it
+  - Shows users currently in the chatroom

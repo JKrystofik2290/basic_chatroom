@@ -18,6 +18,7 @@ io.on('connection', function(socket){
         socket.broadcast.emit('chat message', room[i].name + " has left the chatroom!");
         console.log('user: '+ room[i].name +' disconnected');
         room.splice(i,1);
+        io.emit('update-room', room);
         break;
       }
     }
@@ -37,6 +38,7 @@ io.on('connection', function(socket){
       user = "Mr.NoName";
     }
     room.push({"id": socket.id, "name": user});
+    io.emit('update-room', room);
     socket.broadcast.emit('chat message', user + " has entered the chatroom!");
     console.log('user: ' + user + ' has connected');
   });

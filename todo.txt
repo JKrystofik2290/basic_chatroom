@@ -1,0 +1,2 @@
+- size msg to "currently in room"
+- scrolling with messages

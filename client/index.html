@@ -34,8 +34,12 @@
           
           socket.on('chat message', function(msg){
             var chat = document.getElementById("chatbox");
-            $('#messages').append($('<li>').text(msg));
-            chat.scrollTop = chat.scrollHeight;
+            if (chat.scrollTop >= (chat.scrollHeight - chat.offsetHeight)){
+              $('#messages').append($('<li>').text(msg));
+              chat.scrollTop = chat.scrollHeight;
+            }else{
+              $('#messages').append($('<li>').text(msg));
+            }
           });
           
           socket.on('update-room', function(room){

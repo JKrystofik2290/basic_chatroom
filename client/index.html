@@ -4,15 +4,16 @@
     <title>Socket.IO chat</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
-      body { font: 13px Helvetica, Arial; }
-      form { background: #000; padding: 5px; position: fixed; bottom: 0; width: 100%; }
+      body { font: 13px Helvetica, Arial;}
+      #chatbox{word-wrap: break-word; width: 80%; height: 100vh; display: inline-block; float: left; overflow:scroll;}
+      form { background: #000; padding: 5px; width: 100%; display: inline-block;}
       form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
       form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 7px; font-size: large;}
-      #messages { list-style-type: none; margin: 0; padding: 0; position: absolute; width: 100%; z-index: -1;}
+      #messages { list-style-type: none; margin: 0; padding: 0;}
       #messages li { padding: 5px 10px; }
       #messages li:nth-child(odd) { background: #c4c4c4; }
-      #room {float:right; background: rgb(130, 224, 255); font-size: large; border: 5px solid black; border-right: 0px;}
-      #room h3 { padding: 5px; }
+      #room {word-wrap: break-word; width: 20%; float: right; display: inline-block; height: 100vh; background: rgb(130, 224, 255); font-size: medium; border-left: 5px solid black;}
+      #room h3 { padding: 5px; font-size: medium;}
       #room ul { list-style-type: none; margin: 0; padding: 3px 0px 2px 5px;}
     </style>
   </head>
@@ -44,12 +45,14 @@
           
         });
     </script>
+    <div id="chatbox">
+      <ul id="messages"></ul>
+    </div>
     <div id="room">
       <h3>Currently In Chatroom:</h3>
       <ul>
       </ul>
     </div>
-    <ul id="messages"></ul>
     <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>

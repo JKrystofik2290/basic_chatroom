@@ -1,2 +1,3 @@
-- size msg to "currently in room"
-- scrolling with messages
+- fit whole window to screen size
+- auto scroll to bottom of chatbox
+- make mobile friendly

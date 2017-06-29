@@ -1,3 +1,2 @@
-- fit whole window to screen size
-- auto scroll to bottom of chatbox
+- only auto scroll if at bottom
 - make mobile friendly

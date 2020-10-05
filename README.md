@@ -1,6 +1,7 @@
 # basic_chatroom
+A basic chatroom where multipule users can connect and chat updating each client as new messages are sent.
+
 # Fuctionality:
-  - Single multi-user chatroom
   - Prompts users when entering chatroom for username
     - Will NOT remember returning users
     - Usernames CAN be duplicated
